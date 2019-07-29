@@ -103,10 +103,11 @@ public class SecondCalendar {
             }
 
             for (int daysDisplay = 1; daysDisplay <= daysMonth; daysDisplay++) {
-                if (firstDayYear % 7 == 0)
+                if (firstDayYear % 7 == 0) {
                     System.out.println();
+                }
 
-                System.out.println("%3d ", daysDisplay);
+                System.out.printf("%3d ", daysDisplay);
                 firstDayYear += 1;
             }
             System.out.println();
